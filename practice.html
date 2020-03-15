@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arguments Passed inside Jquery</title>
+    </head>
+    <body>
+        <ol>
+            <li>1st li tag</li>
+            <li>2nd li tag</li>
+            <li>3rd li tag</li>
+            <li>4th li tag</li>
+        </ol>
+    </body>
+        <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+        var arr=[];
+        $(document).ready(function()
+        {
+            $("li").each(function(index)
+            {
+                var element=$(this).text();
+                arr.push(element);
+            });
+        })
+        </script>
+</html>

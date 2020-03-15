@@ -1,0 +1,17 @@
+<html>
+<head></head>
+<body></body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    var first={name : "Samsung",price : "14000"};
+    var second={name : "Apple",price : "34000"};
+    var third={name : "Microsoft",Price : "40000"};
+    var data=[first,second,third];
+    var obj=data.find((index)=>
+    {
+        return index.name!="Apple";
+    });
+    alert(obj.name);
+    alert(obj.price);
+</script>
+</html>

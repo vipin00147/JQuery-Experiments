@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attr() Function</title>
+    </head>
+    <body>
+    
+        <a href="www.google.com">Visit Google</a>
+        <a href="www.yahoo.com">Vosot Yahoo</a>
+        <a href="www.facebook.com">Visit Facebook</a>
+        <a href="www.amazon.com">visit Amazon</a>
+        <a href="www.Twitter.com">Visit Twitter</a>
+        <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+        var links=[];
+        $('a').each(function(index)
+        {
+           var href= $(this).attr('href');
+           links.push(href);
+        });
+       for(var i=0;i<links.length;i++)
+       {
+           alert(links[i]);
+       }
+       alert($("a").length);
+        </script>
+    </body>
+</html>

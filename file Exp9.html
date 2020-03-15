@@ -1,0 +1,43 @@
+<html>
+    <head></head>
+    <body>
+        <div id="div1" style='display:none; border: 1px solid black'>
+            <div id="inner_div">This is nested div tag, My parent div is hidden</div>
+            </div>
+            <div id="div2" style='border: 1px solid black'>I am second div </div>
+            <div id="div3" style='border: 1px solid black'>
+            I am third div and i am parent
+            <div id="div4" style="display:none;border: 1px solid black">I am nested in second div </div>
+            </div>
+            <table border=1 style='display:none;background-color:#917213' id='summary'>
+            <tr id="row1"><td></td><td></td></tr>
+            <tr id="row2"><td></td><td></td></tr>
+            <tr id="row3"><td></td><td></td></tr>
+            </table>
+            <button id='action'>Summary of Document</button>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            var hidden=[];
+            var visible=[];
+            var count=0;
+            $("#action").click(function()
+            {
+                $("table").removeAttr("style");
+                $("div:hidden").each(function()
+                {
+                    count++;
+                    hidden.push($(this).text());
+                });
+                $("div:visible").each(function()
+                {
+                    count++;
+                    visible.push($(this).text());
+                });
+               alert(hidden[0]); 
+            });
+        });
+    </script>
+</html>

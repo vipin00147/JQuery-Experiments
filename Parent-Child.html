@@ -1,0 +1,51 @@
+<html>
+<head></head>
+<body>
+    <h1>A</h1>
+    <p>B</p>
+    <p>C</p>
+        <div style="border:1px solid;">
+        <p>D</p>
+        <p>E</p>
+        <p>F</p>
+        </div><br>
+            <div style="border:1px solid;">
+            <p>G</p>
+            <p>H</p>
+            <p>I</p>
+        </div><br>
+        <div style="border:1px solid;">
+            <p>This is only child</p>
+        </div>
+<br>
+    <button id="bta1">First-Child()</button>
+    <button id="bta2">Last-Child()</button>
+    <button id="bta3">Nth-Child()</button>
+    <button id="bta4">First()</button>
+    <button id="bta6">only-child()</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $("#bta1").click(function()
+    {
+        $("p:first-child()").css("background-color","red");
+    });
+
+    $("#bta2").click(function()
+    {
+        $("p:last-child()").css("background-color","green");
+    });
+    $("#bta3").click(function()
+    {
+        $("p:nth-child(3)").css("background-color","yellow");
+    });
+    $("#bta4").click(function()
+    {
+        $("p:first").css("background-color","purple");
+    });
+    $("#bta6").click(function()
+    {
+        $("p:only-child").css("background-color","orange");
+    });
+</script>
+</html>

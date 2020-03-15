@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+    <p>This is 1st p tag</p>
+    <div>This is 1st Div Tag</div>
+    <ul>
+        <li>1st li tag</li>
+    </ul>
+    <button type="button" style="color: black; font: bold 14px Arial;" >Click</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+   $(document).ready(function()
+   {
+       $("button").click(function()
+       {
+        alert($('div,ul li,p').text());
+       });
+   });
+</script>
+</html>

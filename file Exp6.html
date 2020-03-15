@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <p style="border:2px solid; width:25%; margin-left:25%; margin-right:25%">
+            <img style="margin-left:25%;margin-right:25%" height=80 width=80/><br>
+            <a href="#" title="image1">Image 1</a>
+            <a href="#" title="image2">Image 2</a>
+            <a href="#" title="image3">Image 3</a>
+        </p>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        var arr=["image1.jpg","image2.jpg","image3.jpg"];
+        $(document).ready(function()
+        {
+            $("a").each(function(index)
+            {
+                $(this).attr("href",arr[index]);
+            });
+        });
+    </script>
+</html>

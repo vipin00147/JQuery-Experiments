@@ -1,0 +1,18 @@
+<html>
+<head></head>
+<body>
+    <p>hello Everyone</p>
+    <p>Everything is fine</p>
+    <button>Click To Slice</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+        $("button").click(function()
+        {
+            $("p").slice(1).css("background-color","red");
+        });
+    });
+</script>
+</html>

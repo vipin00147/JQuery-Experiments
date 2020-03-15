@@ -1,0 +1,25 @@
+<html>
+    <head>   
+    </head>
+    <body>
+        <div><span>first paragraph</span></div>
+        <span>second paragraph</span>
+        <div><span>third paragraph</span></div>
+        <button id='action'>Click to Perform Action</button>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        var arr=["Visit Google","Visit Flipkart"];
+        $(document).ready(function()
+        {
+            $("#action").click(function()
+            {
+                $('div>span').each(function(index)
+                {
+                    $(this).text(arr[index]).css("color","red");
+                });
+            $("body>span").wrap("<div></div>").css("border","3px dashed green");
+            });
+        });
+    </script>    
+</html>

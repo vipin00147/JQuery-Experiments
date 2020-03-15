@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Index() Function</title>
+</head>
+<body>
+    <p id="c1">1st p tag</p>
+    <p id="c2">2nd p tag</p>
+    <p class="c1">3rd p tag</p>
+    <button>Show index</button>
+</body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+       $(document).ready(function()
+       {
+        $("button").click(function()
+        {
+            alert($(".c1").index());
+        });
+       });
+    </script>
+</html>

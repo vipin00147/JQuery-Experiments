@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Hello</title>
+</head>
+<body>
+    <a href="https://www.google.com/" title="google">Visit Google</a>
+    <a href="https://www.yahoo.com/" title="yahoo">Visit Yahoo</a>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    $('a').get(1).title="jquery";
+    $('a').each(function(index)
+    {
+        var x=$(this).attr('title');
+       alert(x);
+    });   
+</script>
+</html>

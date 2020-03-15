@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Changed Row Color</title>
+    </head>
+    <body>
+    <div>Opportunities Are Equal For All</div>
+    <div>But The Difference Is That</div>
+    <div>Positive person Give Results</div>
+    <div>And Negative Person give</div>
+    <div>Reasons And Excuse</div>
+    </body>
+        <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+        $(document).ready(function()
+        {
+            $('div:even').css("background-color","yellow");
+            $('div:odd').css("background-color","green");
+        });
+        </script>
+</html>

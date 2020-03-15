@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Filter() Function</title>
+    </head>
+    <body></body>
+        <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+        var first = {Name : "Samsung" , Price : 16000};
+        var second = {Name : "Apple" , Price : 24000};
+        var third = {Name : "Microsoft" , Price : 21000};
+        var data = [first,second,third];
+
+        var data = data.filter((item)=>{
+            return item.Name!="Microsoft";
+        });
+        alert(data);
+        $(data).each(function(index)
+        {
+            alert(data[index].Name);
+            alert(data[index].Price);
+        })
+        </script>
+</html>

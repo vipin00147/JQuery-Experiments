@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+    <p>This is 1st p tag</p>
+    <p>This is 2nd p tag</p>
+    <p>This is 3rd p tag</p>
+    <button>Submit</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+
+      var ab=$.noConflict();
+ 
+       ab(document).ready(function()
+       {
+    ab("button").click(function()
+          {
+            ab("p").hide();
+          });
+       });
+ 
+</script>
+</html>

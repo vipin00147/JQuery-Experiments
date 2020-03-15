@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+    <h1>This is 1st p tag</h1>
+    <h2>This is 2nd p tag</h2>
+    <h3>This is 3rd p tag</h3>
+    <button>Submit</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+
+$(document).ready(function()
+    {
+    $("button").click(function()
+        {
+           alert($('h3,h2,h1').get(2).nodeName);
+        });
+    });
+ 
+</script>
+</html>

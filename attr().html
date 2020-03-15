@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attr() Function</title>
+    </head>
+    <body>
+        <h1>To Display id of all the DIV tags.</h1>
+        <div id="a">First line</div>
+        <div id="b">Second Line</div>
+        <div id="c">Third Line</div>
+        <div id="d">Fourth Line</div>
+    </body>
+    <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+       $('div').each(function(index)
+       {
+        alert($(this).attr('id'));
+       })
+    </script>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+    <body>
+        <p id="A">Hello Vipin</p>
+        <p id="B">How Are You</p>
+        <p id="C">Nice to meet you</p>
+        <button id="bta1">Submit</button>
+        <button id="bta2">Submit</button>
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $("#bta1").css("background-color","yellow");
+        $("#bta2").css("background-color","green");
+
+        $("#bta1").click(function()
+        {
+          alert("text is : "+$("#A").text());
+          alert($("#A").attr('id'));
+        });
+        
+        $("#bta2").click(function()
+        {
+            $("#B").text("Hello Vipin");
+            $("#B").attr("id","b");
+            alert($("#b").text());
+        });
+    </script>
+</html>

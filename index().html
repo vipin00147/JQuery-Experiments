@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Index() Function</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        var first = {Name : "Samsung" , Price : 14000};
+        var second = {Name : "Apple" , Price : 60000};
+        var third = {Name : "Microsoft" , Price : 20000};
+
+    var data = [first,second,third];
+    var object = data.find((item)=>
+    {
+        return item.Name=="Microsoft";
+    }) 
+    alert(object.Name);
+    alert(object.Price);
+    </script>
+</body>
+</html>

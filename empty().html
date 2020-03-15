@@ -1,0 +1,18 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+        <p>Third Paragraph</p>
+        <p></p>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("p:empty()").text("Fouth Paragraph").css("border","3px dashed green");
+        });
+    </script>    
+</html>

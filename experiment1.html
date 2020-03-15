@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <title>Experiment 1</title>
+    </head>
+    <body>   
+        <button id="d">Play</button>
+            
+        <div>Welcome</div>
+        <div>Chitkara</div>
+        <div id="c"></div>
+        
+        <script src = ""></script>
+        <script>
+            alert("i  m here");
+             $(document).ready(function()
+               {
+                $("#d").click(function()
+                {
+                    alert("hello");
+                $("#c").text($("div").text());
+                });
+               });
+            </script> 
+        </body>
+    </html>

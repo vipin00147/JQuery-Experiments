@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        var data=["Apple","Microsoft","Accenture","Microsoft","Google"];
+        var mylist="";
+        data.forEach(function(index)
+        {
+            mylist=mylist+"<li>"+index+"</li>";
+        });
+        $(mylist).appendTo($('ol'));
+        alert(mylist);
+    </script>
+</html>

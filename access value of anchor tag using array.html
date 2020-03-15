@@ -1,0 +1,16 @@
+<html>
+<head></head>
+<body>
+    <a href="https://www.google.com" title="google">google</a><br>
+    <a href="https://www.Amazon.com" title="Amazon">Amazon</a><br>
+    <a href="https://www.Youtube.com" title="youtube">Youtube</a><br>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    var array=$('a').get();
+$(document).ready(function()
+{
+    alert(array[1].title);
+});
+</script>
+</html>

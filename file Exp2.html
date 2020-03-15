@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body>
+    <a href=""></a><br>
+    <a href=""></a><br>
+    <a href=""></a><br>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+var mylink=[{Link : 'page1.html' , title : 'Visit Page 1'},{Link : 'page2.html' , title : 'visit Page 2'},{Link : 'page3.html' , title : 'visit Page 3'}];
+$(document).ready(function()
+{
+    var first={Link : 'page1.html' , title : 'Visit Page 1'};
+    var second={Link : 'page2.html' , title : 'visit Page 2'};
+    var Third={Link : 'page3.html' , title : 'visit Page 3'};
+    
+   // var first=["page1.html","page2.html","page3.html"];
+    //var second=["page1","page2","page3"];
+    var arr=[first,second,third];
+    $(document).ready(function()
+    {
+        $('a').each(function(index)
+        {
+        $(this).attr('href',arr[index].Link).text(arr[index].title);    
+        });   
+    });
+});
+</script>
+</html>

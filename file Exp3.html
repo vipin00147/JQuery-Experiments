@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        <textarea id="A"></textarea>
+        <div class="B" style="border:1px solid;width: 200px;"></div>
+        <button id="action">Click To Add Div tag</button>  
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $("#action").click(function()
+        {
+            var a=$("#A").val();
+            if(a.length==0)
+            {
+                alert("Please! Write Something");
+            }
+            else
+            {
+                $(".B").append("<p>"+a+"</p>");
+                //or
+               // $(".B").text($("#A").val());
+            } 
+        });
+    </script>
+</html>

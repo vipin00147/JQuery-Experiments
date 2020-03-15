@@ -1,0 +1,43 @@
+<html>
+<head></head>
+<body>
+<table border="1px">
+<tr>
+   <th>First Name</th>
+   <th>Last Name</th> 
+</tr>
+<tr>
+    <td>Vipin</td>
+    <td>Kumar</td>
+</tr>
+<tr>
+    <td>Bhavit</td>
+    <td>raheja</td>
+</tr>
+<tr>
+    <td>Jugal</td>
+    <td>Mishra</td>
+</tr>
+<tr>
+    <td>Divit</td>
+    <td>Joshi</td>
+</tr>
+<tr>
+    <td>Chetan</td>
+    <td>Goyal</td>
+</tr>
+</table>
+    <button>Button</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+$(document).ready(function()
+{
+    $("button").click(function()
+    {
+        $("tr:even").css("background-color","yellow");
+        $("tr:odd").css("background-color","red");
+    });
+});
+</script>
+</html>

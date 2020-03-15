@@ -1,0 +1,35 @@
+<html>
+ <head></head>
+    <body>
+        <ol style="border: 1px solid black; width:25%">
+            <li>Apples<li>Oranges<li>Bananas<li>Peach
+        </ol>
+
+        <ol style="border: 1px solid black; width:25%">
+            <li>Mango<li>Gauva<li>Lemon<li>Kiwi
+        </ol>
+
+        <button id="action">Click to Perform Action</button>
+        <button id="action2" disabled='disabled'>Restore to default</button>        
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#action").click(function()
+            {
+                $("li:even").wrap("<h2></h2>").css("color","red");
+                $("li:odd").wrap("<h2></h2>").css("color","green");
+                $("#action").attr("disabled","disable");
+                $("#action2").removeAttr("disabled");
+            });
+            $("#action2").click(function()
+            {
+                $("li:even,li:odd").removeAttr("style");
+                $("li:even,li:odd").unwrap("h2");
+                $("#action2").attr("disabled","disable");
+                $("#action").removeAttr("disabled");
+            });
+        });
+    </script>
+</html>

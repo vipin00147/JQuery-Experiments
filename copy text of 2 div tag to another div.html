@@ -1,0 +1,19 @@
+<html>
+<head></head>
+<body>
+    <div id="A">1st div Tag</div>
+    <div id="B">2nd Div Tag</div>
+    <div id="demo"></div>
+    <button id="action">Click Here To Copy</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+        $("#action").click(function()
+        {
+            $("#demo").text($("#A").text()+$("#B").text());
+        });
+    });
+</script>
+</html>

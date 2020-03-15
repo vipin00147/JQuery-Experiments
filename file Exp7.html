@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <style>
+           .oldClass {background-color: cyan;border: 2px solid green;}
+        .newClass {background-color: yellow;border: 2px solid red;}
+        </style>
+        </head>
+        <body>
+        <div id="myDiv" class="oldClass">This is a demo text to understand<br>
+        How to change CSS class at runtime.
+        </div>
+        <button id="action">Click to Change Class</button>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#action").click(function()
+            {
+                $("div").attr("class","newClass");
+            });
+        });
+    </script>
+</html>
