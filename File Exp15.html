@@ -1,0 +1,45 @@
+<html>
+    <head></head>
+    <body>
+        [1]. Bind () and Unbind () technique.</a><br>
+        [2]. Mouse-Over and Mouse-Out technique<br>
+        [3]. Key-Up and Key-Down technique<br><br>
+        <input type="text" id="txt1"/><br>
+        <button id="action1">Unbind</button><br><br>
+        <button id="m1">Mouse-over and Mouse-out</button><br><br>
+        <button id="n1">Key-Up and Key-Down technique</button>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function()
+        { 
+           //Use of Bind And Unbind Method.....
+            $("input#txt1").bind("click",function()
+            {
+                alert("Bind method is Running.....");
+            });
+            $("#action1").click(function()
+            {
+                $("input").unbind("click");
+            });
+        });
+        //Use of Mouse-over and Mouse-out technique...
+        $("#m1").mouseover(function()
+        {
+            alert("Mouse-Over Method Is Running...");
+        });
+        $("#m1").mouseout(function()
+        {
+            alert("Mouse-Out Method Is Running...");
+        });
+        //Use of Key-Up and Key-Down technique
+        $("#n1").keyup(function()
+        {
+            alert("Use of Keyup Technique....");
+        });
+        $("#n1").keydown(function()
+        {
+            alert("Use of Keydown Technique....");
+        });
+    </script>
+</html>
