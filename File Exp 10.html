@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+        <div class='main' style='border:2px solid blue'>
+            <div class='lazy-css'>This is lazy css</div>
+            <div class='smart-css'>This is smart css</div>
+            <div class='lazy-css'>This is lazy css</div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("body").on("click",function()
+            {
+                $("div").each(function()
+                {
+                $(this).filter(".lazy-css").remove();
+                });
+            });
+        });
+    </script>   
+</html>
