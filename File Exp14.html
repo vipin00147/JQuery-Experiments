@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        Enter Text : <input type="text" id="string"><br>
+        <button class="action">Write</button>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function()
+        { 
+            var i=0;
+            $(".action").click(function()
+            {  
+                var x=$("input:text").val();
+                if(i==0){
+                    $("<select size=3><option value=''>"+x+"</option></select>").appendTo("body");
+                    i++;
+                }
+                else if(i==1){
+                    $("select").prepend("<option value=''>"+x+"</option>");
+                    i++;
+                }
+                else if(i==2){
+                    $("select").append("<option value=''>"+x+"</option>");
+                    i++;
+                }
+            });
+        });
+    </script>
+</html>
