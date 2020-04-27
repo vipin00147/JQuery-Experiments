@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        <div id='1'>
+            <span>This is span TAG </span>
+            <div id='2'>
+                <div id='3'>
+                <span>This is also span TAG</span>
+                </div>
+            </div>
+            </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("span").each(function()
+            {
+                alert("Length of the parent of the Span "+$(this).parent().length);
+                alert("The id of Parent of the Span "+$(this).parent().attr('id'));
+            });
+        });
+    </script>
+</html>
