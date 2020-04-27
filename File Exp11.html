@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        <p>jQuery is really smart</p>
+        <div>This is a sample document</div>
+        <blockquote>To save time use jQuery</blockquote>
+        <button id='action'>Check Status</button>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+           $("#action").click(function()
+            {
+                //$("body>*:contains(jQuery)").css("font-weight","bold");
+                var pattern=/jQuery/i;
+                $("body").children().filter(function()
+                {
+                    return pattern.test($(this).text());
+                }).wrap("<strong></strong>");
+            });
+        });
+    </script>
+</html>
