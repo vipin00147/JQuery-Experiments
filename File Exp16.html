@@ -1,0 +1,38 @@
+<html>
+    <head></head>
+    <body>
+        <ul>
+            <li id='L1'>This is first item.<a href='http://www.yahoo.com'>Go to Yahoo.com</a>
+            <li id='L2'>This is second item.<a href='http://www.flipkart.com'>Go to flipkart.com</a>
+            <li id='L3'>This is Third item.<a href='http://www.amazon.com'>Go to amazon.com</a>
+            </ul>	
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function()
+        { 
+            $("li").each(function(i)
+            {
+                $(this).click(function()
+                {
+                    alert("User just clicked on the list item "+(i));
+                });
+            });
+            $("a").each(function()
+            {
+                $(this).click(function(event)
+                {
+                    alert("user just clicked on hyper-link "+$(this).attr("href"));
+                    var x=confirm("Are you sure you want to leave this web page ?");
+                    if(x==true){
+                       event.stopPropagation();
+                    }
+                    else{
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                });
+            });
+        });
+    </script>
+</html>
