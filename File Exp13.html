@@ -1,0 +1,38 @@
+<html>
+    <head></head>
+    <body>
+        <form id='form1'>
+            <div style="border:1px solid blue">
+                Teacher<input type='radio' name='group-1' value='Teacher'/>
+                Business<input type='radio' name='group-1' value='Business'/>
+                Sports<input type='radio' name='group-1' value='Sports'/>
+            </div>
+            <div style="border:1px solid blue">
+                Start Sports<input type='radio' name='group-2' value='Star Sports'/>
+                Discovery<input type='nradio' name='group-2' value='Discovery'/>
+                National Geographic<input type='radio' name='group-2' value='National Geographic'/>
+            </div>
+            <button id='action'>Find Selected</button>
+        </form>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function()
+        {/*
+            var arr=[];
+            $("input").click(function()
+            {
+                arr.push($(this).val());
+            });
+            $("#action").click(function()
+            {
+                alert("Selected Elements are : "+arr);              
+            });*/
+            $("#action").click(function()
+            {
+                alert($("input[name='group-1']:checked").val());
+                alert($("input[name='group-2']:checked").val());             
+            });
+        });
+    </script>
+</html>
